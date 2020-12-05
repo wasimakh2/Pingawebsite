@@ -1,7 +1,8 @@
 import pytest
-def test_sum():
-    assert sum([1, 2, 3]) == 6, "Should be 6"
+from main import  StartProcess
+def Checktitle():
+    assert str(StartProcess()) == "startprocess - A Code Genrator", "Should be startprocess - A Code Genrator"
 
 if __name__ == "__main__":
-    test_sum()
+    Checktitle()
     print("Everything passed")
